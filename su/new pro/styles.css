@@ -1,0 +1,112 @@
+html,body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+}
+#videoBG {
+    position:fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('poster.jpg');
+        background-size: cover;
+        background-color: white;
+    }
+}
+.section {
+    height: 100vh;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.section h1 {
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Cookie";
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  opacity: 0.7;
+   color: black;}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #0c356b;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #efcc00;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: ;
+  color: white;
+}
+
+.topnav a.search-container {
+  float: right;
+}
+
+.topnav a.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav a.search-container button:hover {
+  background: #ccc;
+}
+
+
+.cont
+{
+  font-size: 25px;
+  font-style: oblique;
+  background-color: #e6f2ff;
+}

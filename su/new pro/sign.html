@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deals of the day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   <style>
+.mySlides {display:none;}
+ p{
+    font-size: 30px;
+    font-style: italic;
+  }
+
+
+
+  #imgg{
+    border-radius: 50%;
+  }
+.mySlides {display:none;}
+</style>
+</head>
+<body bgcolor=" #e6f2ff">
+  <div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="aboutus.html">About us</a>
+  <a href="contact.html">Contact</a>
+  <a href="order.html">Order medicines</a>
+  <a href="register.html">Sign UP</a>
+  <a href="chat.html">Ask Our Doctors</a>
+    <img src="logo.jpeg" width="50" height="50" id=imgg>
+</div>
+       </br>
+    
+
+
+       
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="medi.jpg" style="width:100%" >
+ <img class="mySlides" src="slideimg.jpg" style="width:100%" height="70%">
+ <img class="mySlides" src="medi2.jpg" style="width:100%">
+ <img class="mySlides" src="medi5.jpg" style="width:100%" height="30%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</br>
+<p >OUR FEATURED BRANDS</b>
+
+<p>Click the pictures to know more about the brand.......</p>
+
+
+<a href="horlicksbuy.html"><img src="images/horlicks.jpg" id="imgg" title="Example Image Link" width="90" height="90" border="1" /></a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="nestelebuy.html"><img src="images/nest.png" id="imgg"  title="Example Image Link" width="90" height="90" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="catbuy.html"><img src="images/cad.jpg" id="imgg"  title="Example Image Link" width="90" height="90" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="whisp.html"><img src="images/whisper.jpg" id="imgg"  title="Example Image Link" width="90" height="90" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="pat.html"><img src="images/pat.jpg" id="imgg"  title="Example Image Link" width="90" height="90" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="amruthanjan.html"/><img src="images/amruthanjan.jpg" id="imgg" title="Example Image Link" width="90" height="90" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="nylebuy.html"><img src="images/nyle.png" id="imgg"  title="Example Image Link" width="90" height="90" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="col.html"><img src="images/colg.png" id="imgg" title="Example Image Link" width="90" height="90" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="vasbuy.html"><img src="images/vas.jpg" id="imgg"  title="Example Image Link" width="90" height="90" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+</p>
+</body>
+</html>
+
+</body>
+</html>

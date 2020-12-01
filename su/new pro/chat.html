@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+
+     input[type=button] {
+            background-color:#4CAF50;
+            color: white;
+            border: none;
+            text-decoration: none;
+            width: 90%;
+            color: white;
+            padding: 16px 20px;
+            margin: 20px 20px;
+            cursor: pointer;
+            opacity: 0.8;
+         }
+/* Button used to open the chat form - fixed at the bottom of the page */
+.ali
+{
+  align-content: center;
+}
+  #imgg{
+    border-radius: 50%;
+  }
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  align-content: center;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  align-content: center;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  align-content: center;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  align-content: center;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+  align-content: center;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+   <div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="aboutus.html">About us</a>
+  <a href="contact.html">Contact</a>
+  <a href="order.html">Order medicines</a>
+  <a href="register.html">Sign UP</a>
+  <a href="chat.html">Ask Our Doctors</a>
+    <img src="logo.jpeg" width="50" height="50" id=imgg>
+</div>
+
+
+<h2>Consult Our Doctors Online</h2>
+<table>
+  <tr>
+    <td>
+<img src="images\doc.jpg" width="400">
+</td>
+<td>
+<p>A doctor is auto-assigned to you that best matches your concern.
+</br>Online doctor consultation are rapidly gaining popularity these days as more health insurers offer telemedicine services to help cut costs.
+<br> Studies have shown that virtual care may effectively used to treat common problems such as flu, acne, deer tick bites, sinus and urinary tract infections.
+</br> You will get a diagnosis and treatment for your condition.
+</br>
+</br>
+</br>Click on the chat button ...
+</p>
+
+</td>
+</tr>
+</table>
+
+
+
+<div class="ali">
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <a href="ty.html"><input type="button" name="" value="Send !!!!"></button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+
+}
+
+function thanku() {
+
+
+}
+
+
+</script>
+</div>
+</body>
+</html>
